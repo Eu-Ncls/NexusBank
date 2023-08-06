@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Jost:wght@500&display=swap');
 
 :root {
-    --laranja-escuro: #e76f51;
-    --laranja-claro: #f4a261;
-    --amarelo: #e9c46a;
-    --azul-claro: #2a9d8f;
+    --laranja: #e76f51;
     --azul-escuro: #00111a;
     --azul-escuro-transparente: #00111a9d;
     --cinza-escuro: #1e1b1b;
@@ -34,7 +31,7 @@ main {
     align-items: center;
     position: absolute;
     font-family: var(--font-jost);
-    color: var(--laranja-escuro);
+    color: var(--laranja);
     background-color: var(--cinza-escuro);
     font-size: var(--font-pequeno);
 }
@@ -80,11 +77,13 @@ main {
     height: 10rem;
     z-index: 1;
     background-color: var(--azul-escuro-transparente);
-    border: var(--laranja-escuro) solid 0.35rem;
+    border: var(--laranja) solid 0.35rem;
 }
 
 .header__nav {
-    column-gap: 4rem
+    column-gap: 4rem;
+    position: absolute;
+    margin-left: 25%;
 }
 
 .ancora {
@@ -95,12 +94,21 @@ main {
     color: var(--branco);
 }
 
+.ancora:hover {
+    color: var(--laranja);
+}
+
 .botao {
     background-color: var(--azul-escuro);
-    color: var(--laranja-escuro);
+    color: var(--laranja);
     width: max-content;
     padding: 1%;
     font-family: var(--font-jost);
+    position: relative;
+}
+
+.botao:hover {
+    border: #e76f51 0.2rem solid;
 }
 
 .paragrafoCitacao {
@@ -139,7 +147,7 @@ main {
     align-self: center;
 }
 
-.grid {
+.gridEstatisticas {
     width: 80%;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 100%;
@@ -158,7 +166,7 @@ main {
     justify-content: space-evenly;
     font-family: var(--font-jost);
     font-size: var(--font-medio);
-    color: var(--laranja-escuro);
+    color: var(--laranja);
     background-color: var(--azul-escuro);
 }
 
@@ -227,7 +235,7 @@ main {
 
 .paragrafo {
     font-family: var(--font-jost);
-    color: var(--laranja-escuro);
+    color: var(--laranja);
     font-size: var(--font-grande);
 }
 
@@ -266,7 +274,7 @@ main {
 }
 
 .sectionClientes__container {
-    color: var(--laranja-escuro);
+    color: var(--laranja);
     font-size: var(--font-medio);
     width: max-content;
     height: max-content;
