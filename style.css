@@ -29,11 +29,8 @@ main {
     justify-content: flex-end;
     display: flex;
     align-items: center;
-    position: absolute;
-    font-family: var(--font-jost);
-    color: var(--laranja);
+    position: absolute;    
     background-color: var(--cinza-escuro);
-    font-size: var(--font-pequeno);
 }
 
 .container {
