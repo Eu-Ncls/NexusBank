@@ -1,314 +1,226 @@
-@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Jost:wght@500&display=swap');
-
-:root {
-    --laranja: #e76f51;
-    --azul-escuro: #00111a;
-    --azul-escuro-transparente: #00111a9d;
-    --cinza-escuro: #1e1b1b;
-    --branco: aliceblue;
-    --branco-antigo: antiquewhite;
-    --cinza-claro: #969696;
-    --font-jost: 'Jost', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Montserrat&display=swap');
+ :root {
+    --azul-1: hsl(201, 100%, 5%);
+    --azul-2: hsla(201, 100%, 5%, 0.824);
+    --laranja-1: #e76f51;
     --font-bacasime: 'Bacasime Antique', serif;
-    --font-pequeno: 1.3rem;
-    --font-medio: 1.5rem;
-    --font-grande: 4rem;
-}
+    --font-mont: 'Montserrat', sans-serif;
+ }
 
-main {
+ * {
+    margin: 0;
+    padding: 0;
+ }
+
+ header {
+    background: url(Imagens/estrada-reta-no-meio-do-deserto-com-montanhas-magnificas-e-o-por-do-sol.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 125vh;
     display: flex;
     flex-direction: column;
-    column-gap: 10%;
-}
+    align-items: self-start;
+    background-attachment: fixed;
+    row-gap: 4em;
+ }
 
-.contato {
+ .toll-bar {
     width: 100%;
-    height: 2rem;
-    z-index: 1;
-    mix-blend-mode: hard-light;
-    justify-content: flex-end;
+    height: 5vh;
+    background-color: var(--azul-2);
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    position: absolute;
-    font-family: var(--font-jost);
-    color: var(--laranja);
-    background-color: var(--cinza-escuro);
-    font-size: var(--font-pequeno);
-}
+ }
 
 .container {
     display: flex;
+    justify-content: space-between;
+    align-self: center;
     align-items: center;
-    text-align: center;
 }
 
-.contato__container {
-    column-gap: 1rem;
-    margin-right: 5rem;
+header .container {
+    width: 90vw;
 }
 
-.telefone {
-    width: 1.4rem;
-    height: 1.4rem;
+ .logo {
+    width: 13rem;
+    height: 13rem;
+    background-color: var(--azul-1);
+    cursor: pointer;
+ }
+
+.transition-size {
+    transition: transform 1s;
 }
 
-.header {
+.transition-size:hover {
+    transform: scale(1.1);
+}
+
+.transition-bkg {
+    transition: background 1.3s;
+}
+
+.transition-bkg:hover {
+    color: var(--azul-1);
+    background-color: var(--laranja-1);
+}
+
+a {
+    text-decoration: none;
+    color: var(--laranja-1);
+    font-family: var(--font-mont);
+}
+
+button {
+    font-family: var(--font-mont);
+    background-color: var(--azul-1);
+    border: var(--laranja-1) 0.2em solid;
+    color: var(--laranja-1);
+    padding: 1.5em;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+button:hover {
+    border: var(--azul-1) solid 0.2em;
+}
+
+p {
+    font-family: var(--font-mont);
+    font-size: 1.5em;
+}
+
+.p-baca {
+    font-family: var(--font-bacasime);
+    color: var(--laranja-1);
+}
+
+.header__p-baca {
+    font-size: 4em;
+    color: antiquewhite;
+    width: 58vw;
+    margin-left: 4rem;
+    border: none;
+}
+
+main {
     width: 100%;
-    height: 103vh;
-    row-gap: 20%;
+    height: max-content;
     display: flex;
     flex-direction: column;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(./Imagens/header-banner.webp);
+    align-items: center;
+    justify-content: space-around;
 }
 
-.header__container {
-    margin-top: 3rem;
-    width: 90%;
-    align-self: center;
-    justify-content: space-between;
-    height: max-content;
-    font-family: var(--font-jost);
-}
-
-.logo {
-    width: 10rem;
-    height: 10rem;
-    z-index: 1;
-    background-color: var(--azul-escuro-transparente);
-    border: var(--laranja) solid 0.35rem;
-}
-
-.header__nav {
-    column-gap: 4rem;
-    position: absolute;
-    margin-left: 25%;
-}
-
-.ancora {
-    text-decoration: none;
-    height: min-content;
-    width: min-content;
-    font-size: var(--font-pequeno);
-    color: var(--branco);
-}
-
-.ancora:hover {
-    color: var(--laranja);
-}
-
-.botao {
-    background-color: var(--azul-escuro);
-    color: var(--laranja);
-    width: max-content;
-    padding: 1%;
-    font-family: var(--font-jost);
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     position: relative;
 }
 
-.botao:hover {
-    border: #e76f51 0.2rem solid;
+.section-nums {
+    height: 80vh;
+    background-color: var(--laranja-1);
+
 }
 
-.paragrafoCitacao {
-    font-family: var(--font-bacasime);
+.section-nums .container {
+    width: 90vw;
 }
 
-.header__paragrafoCitacao {
-    width: 79%;
-    margin-left: 4rem;
-    row-gap: 1rem;
-    display: flex;
-    flex-direction: column;
-    color: var(--branco-antigo);
-    font-size: var(--font-grande);
+h1 {
+    font-family: var(--font-mont);
+    color: var(--azul-1);
+    font-size: 4em;
 }
 
-.main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.section {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.topico {
-    color: #e76f51;
-    font-family: var(--font-jost);
-    font-size: var(--font-grande);
-    align-self: center;
-}
-
-.gridEstatisticas {
-    width: 80%;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 100%;
-    align-self: center;
-    height: max-content;
-    display: grid;
-    grid-template-areas: "a b c d";
-}
-
-.grid__itens {
-    margin: 1rem;
-    height: 13rem;
+.box {
+    background-color: var(--azul-1);
+    color: var(--laranja-1);
+    width: 15rem;
+    height: 15rem;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    font-family: var(--font-jost);
-    font-size: var(--font-medio);
-    color: var(--laranja);
-    background-color: var(--azul-escuro);
-}
-
-.grid__itens__anos {
-    grid-area: a;
-}
-
-.grid__itens__paises {
-    grid-area: b;
-}
-
-.grid__itens__clientes {
-    grid-area: c;
-}
-
-.grid__itens__premios {
-    grid-area: d;
-}
-
-.sectionServicos__grid {
-    width: 100%;
-    height: max-content;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 100%;
-    display: grid;
-    align-self: center;
-    grid-template-areas: "s1 s2 s3 s4";
-}
-
-.sectionServicos__grid__servico {
-    height: max-content;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    row-gap: 2rem;
+    justify-content: space-around;
+    padding: 1em;
 }
 
-.s1 {
-    background-color: #001b29;
+h2 {
+    font-family: var(--font-mont);
+    font-size: 3em;
 }
 
-.s2 {
-    background-color: #002233;
+h3 {
+    font-size: 1.5em;
+    font-family: var(--font-mont);
 }
 
-.s3 {
-    background-color: #00293d;
-}
-.s4 {
-    background-color: #003047;
-}
-
-.sectionServicos__grid__servico__container {
-    row-gap: 0%;
-    flex-direction: column;
-    width: 100%;
-    height: max-content;
-}
-
-.sectionServicos__grid__servico__img {
-    width: 7rem;
-    height: 7rem;
-    margin-top: 5%;
-    margin-bottom: 20%;
-}
-
-.paragrafo {
-    font-family: var(--font-jost);
-    color: var(--laranja);
-    font-size: var(--font-grande);
-}
-
-.paragrafoMedio {
-    font-size: var(--font-medio);
-}
-
-.sectionServicos__grid__servico__btn {
-    margin-bottom: 5%;
-    text-decoration: none;
-    padding: 5%;
-}
-
-.sectionClientes {
-    width: 100%;
-    margin-top: 20%;
-    height: 100vh;
-    background-image: url(Imagens/wepik-export-20230629201151lFg0.png);
+.section-emp {
+    background: url(Imagens/arranha-ceu-de-aco-alto-reflete-as-luzes-brilhantes-da-cidade-geradas-pela-ia.jpg) no-repeat;
     background-size: cover;
-    display: flex;
+    background-attachment: fixed;
+    height: 175vw;
+}
+
+.section-emp .container {
+    width: 90vw;
+    padding: 1em;
+}
+
+.section-emp .container-2 {
     flex-direction: column;
-    align-items: center;
-    color: var(--cinza-claro);
-    font-family: var(--font-jost);
-    font-size: var(--font-medio);
+    align-items: flex-start;
+    background-color: var(--azul-1);
+    color: antiquewhite;
+    row-gap: 1em;
+    padding: 1em;
+    width: 80vw;
 }
 
-.pelicula {
-    width: 100%;
-    height: 100vh;
-    background-color: var(--azul-escuro-transparente);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align: center;
+.section-emp .container-2 h1 {
+    color: var(--laranja-1);
 }
 
-.sectionClientes__container {
-    color: var(--laranja);
-    font-size: var(--font-medio);
-    width: max-content;
-    height: max-content;
-    flex-direction: column;
-    row-gap: 0.5rem;
-}
-
-.sectionClientes__fotoCliente {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50rem;
-}
-
-.sectionClientes__paragrafo {
-    width: 40%;
-    background-color: #00111a;
-    padding: 2%;
-    border-radius: 1rem;
-}
-
-.footer {
-    width: 100%;
+.section-emp .box {
+    width: 20rem;
     height: 20rem;
-    margin-top: 35%;
-    background-color: var(--azul-escuro);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    background-color: var(--azul-2);
 }
 
-.footer__lista {
+.section-emp .box p {
+    color: antiquewhite;
+}
+
+.container-3 {
+    background-color: var(--laranja-1);
+    width: 90vw;
+    padding: 1em;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    row-gap: 0.9rem;
-    font-family: var(--font-jost);
-    margin-left: 10%;
+    row-gap: 1em;
 }
+
+.container-3 h1 {
+    color: var(--azul-1);
+}
+
+.container-3 p {
+    text-align: left;
+    width: 80%;
+    align-self: center;
+    color: var(--azul-1);
+}
+
+
+
+
