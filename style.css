@@ -31,7 +31,13 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+<<<<<<< HEAD
  }
+=======
+    position: absolute;    
+    background-color: var(--cinza-escuro);
+}
+>>>>>>> db5a14e0b405041c066d883cbc200bf9b254658d
 
 .container {
     display: flex;
