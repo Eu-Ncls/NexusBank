@@ -99,11 +99,12 @@ p {
 }
 
 .header__p-baca {
-    font-size: 4em;
+    font-size: 5.7em;
     color: antiquewhite;
     width: 58vw;
     margin-left: 4rem;
     border: none;
+    margin-top: 13vh;
 }
 
 main {
@@ -183,7 +184,7 @@ h3 {
     color: antiquewhite;
     row-gap: 1em;
     padding: 1em;
-    width: 80vw;
+    width: 90vw;
 }
 
 .section-emp .container-2 h1 {
