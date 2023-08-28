@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Montserrat&display=swap');
- :root {
+
+:root {
     --azul-1: hsl(201, 100%, 5%);
     --azul-2: hsla(201, 100%, 5%, 0.824);
     --laranja-1: #e76f51;
     --font-bacasime: 'Bacasime Antique', serif;
     --font-mont: 'Montserrat', sans-serif;
- }
+}
 
- * {
+* {
     margin: 0;
     padding: 0;
- }
+}
 
- header {
-    background: url(Imagens/estrada.jpg) no-repeat;
+header {
+    background: url(Imagens/estrada.webp) no-repeat;
     background-size: cover;
     width: 100%;
     height: 125vh;
@@ -22,9 +23,9 @@
     align-items: self-start;
     background-attachment: fixed;
     row-gap: 4em;
- }
+}
 
- .toll-bar {
+.toll-bar {
     width: 100%;
     height: 5vh;
     background-color: var(--azul-2);
@@ -44,12 +45,12 @@ header .container {
     width: 90vw;
 }
 
- .logo {
+.logo {
     width: 13rem;
     height: 13rem;
     background-color: var(--azul-1);
     cursor: pointer;
- }
+}
 
 .transition-size {
     transition: transform 1s;
@@ -165,7 +166,7 @@ h3 {
 }
 
 .section-emp {
-    background: url(Imagens/predios-sol.jpg) no-repeat;
+    background: url(Imagens/predios-sol.webp) no-repeat;
     background-size: cover;
     background-attachment: fixed;
     height: 175vw;
@@ -183,7 +184,6 @@ h3 {
     color: antiquewhite;
     row-gap: 1em;
     padding: 1em;
-    width: 80vw;
 }
 
 .section-emp .container-2 h1 {
@@ -221,6 +221,32 @@ h3 {
     color: var(--azul-1);
 }
 
+.section-inova {
+    background: url(Imagens/homen.webp) no-repeat;
+    background-size: cover;
+}
 
+.section-inova .container {
+    width: 50vw;
+    height: 100vh;
+    flex-direction: column;
+    align-self: flex-end;
+    justify-content: space-evenly;
+}
 
+.section-inova .container h1 {
+    color: var(--laranja-1);
+}
 
+.section-inova .box {
+    width: 80%;
+    height: 20%;
+    align-self: flex-start;
+    padding: 1em;
+    text-align: left;
+}
+
+.section-inova .container button {
+    width: 85%;
+    align-self: flex-start;
+}
